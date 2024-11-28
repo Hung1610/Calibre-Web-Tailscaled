@@ -1,0 +1,19 @@
+{
+    "TCP": {
+      "443": {
+        "HTTPS": true
+      }
+    },
+    "Web": {
+      "eggie-books.griffin-kelvin.ts.net:443": {
+        "Handlers": {
+          "/": {
+            "Proxy": "http://127.0.0.1:8083"
+          }
+        }
+      }
+    },
+    "AllowFunnel": {
+      "eggie-books.griffin-kelvin.ts.net:443": true
+    }
+}

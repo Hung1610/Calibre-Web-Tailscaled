@@ -1,0 +1,38 @@
+---
+name: "calibre-web"
+services:
+  ts-calibre-web:
+    image: tailscale/tailscale:latest
+    container_name: ts-calibre-web
+    hostname: eggie-books
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY}
+      - TS_EXTRA_ARGS=--advertise-tags=tag:personal
+      - TS_SERVE_CONFIG=/config/calibre-web.json
+      - TS_STATE_DIR=/var/lib/tailscale
+    volumes:
+      - ./tailscale/state:/var/lib/tailscale
+      - ./tailscale/config:/config
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    ports:
+      - 80:80
+      - 443:443
+      - 8083:8083
+    restart: unless-stopped
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - DOCKER_MODS=linuxserver/mods:universal-calibre #optional
+      - OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
+    volumes:
+      - ./data:/config
+      - ~/Calibre Library:/books
+    network_mode: service:ts-calibre-web
+    restart: unless-stopped
