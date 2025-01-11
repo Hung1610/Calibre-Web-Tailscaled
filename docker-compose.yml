@@ -33,6 +33,6 @@ services:
       - OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
     volumes:
       - ./data:/config
-      - ~/Calibre Library:/books
+      - ~/iCloudDrive/Media/Calibre Library:/books:z
     network_mode: service:ts-calibre-web
     restart: unless-stopped

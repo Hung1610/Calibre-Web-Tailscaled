@@ -1,306 +1,318 @@
-[2024-11-28 13:37:32,788]  WARN {cps.config_sql:364} Log path /config/calibre-web.log not valid, falling back to default
-[2024-11-28 13:37:32,807]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:37:32,813]  WARN {cps.config_sql:400} invalidating configuration
-[2024-11-28 13:37:32,813]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:37:32,846]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 13:37:33,155]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[2024-12-11 16:16:44,125]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-12-11 16:16:44 UTC], next run at: 2024-12-11 16:16:44 UTC)" executed successfully
+[2024-12-11 16:16:45,848]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2024-12-12 17:15:41,434]  WARN {apscheduler.executors.default:120} Run time of job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-13 01:00:00 UTC)" was missed by 16:15:41.433190
+[2024-12-12 17:15:41,435]  WARN {apscheduler.executors.default:120} Run time of job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-13 01:00:00 UTC)" was missed by 16:15:41.435221
+[2024-12-12 17:15:41,436]  WARN {apscheduler.executors.default:120} Run time of job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-13 01:00:00 UTC)" was missed by 16:15:41.436000
+[2024-12-12 17:15:41,436]  WARN {apscheduler.executors.default:120} Run time of job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-13 01:00:00 UTC)" was missed by 16:15:41.436964
+[2024-12-12 17:15:41,437]  WARN {apscheduler.executors.default:120} Run time of job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-13 01:00:00 UTC)" was missed by 16:15:41.437271
+[2024-12-12 17:15:41,437]  WARN {apscheduler.executors.default:120} Run time of job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-13 02:00:00 UTC)" was missed by 15:15:41.437830
+[2024-12-13 07:37:03,641]  WARN {apscheduler.executors.default:120} Run time of job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-14 01:00:00 UTC)" was missed by 6:37:03.640800
+[2024-12-13 07:37:03,641]  WARN {apscheduler.executors.default:120} Run time of job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-14 01:00:00 UTC)" was missed by 6:37:03.641239
+[2024-12-13 07:37:03,641]  WARN {apscheduler.executors.default:120} Run time of job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-14 01:00:00 UTC)" was missed by 6:37:03.641506
+[2024-12-13 07:37:03,641]  WARN {apscheduler.executors.default:120} Run time of job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-14 01:00:00 UTC)" was missed by 6:37:03.641613
+[2024-12-13 07:37:03,641]  WARN {apscheduler.executors.default:120} Run time of job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-14 01:00:00 UTC)" was missed by 6:37:03.641792
+[2024-12-13 07:37:03,642]  WARN {apscheduler.executors.default:120} Run time of job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-14 02:00:00 UTC)" was missed by 5:37:03.642020
+[2024-12-14 01:00:00,001]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" (scheduled at 2024-12-14 01:00:00+00:00)
+[2024-12-14 01:00:00,001]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" (scheduled at 2024-12-14 01:00:00+00:00)
+[2024-12-14 01:00:00,001]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" (scheduled at 2024-12-14 01:00:00+00:00)
+[2024-12-14 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" (scheduled at 2024-12-14 01:00:00+00:00)
+[2024-12-14 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" (scheduled at 2024-12-14 01:00:00+00:00)
+[2024-12-14 01:00:00,012]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" executed successfully
+[2024-12-14 01:00:00,016]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" executed successfully
+[2024-12-14 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" executed successfully
+[2024-12-14 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" executed successfully
+[2024-12-14 01:00:00,019]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-15 01:00:00 UTC)" executed successfully
+[2024-12-14 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-15 02:00:00 UTC)" (scheduled at 2024-12-14 02:00:00+00:00)
+[2024-12-14 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-15 02:00:00 UTC)" executed successfully
+[2024-12-15 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" (scheduled at 2024-12-15 01:00:00+00:00)
+[2024-12-15 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" (scheduled at 2024-12-15 01:00:00+00:00)
+[2024-12-15 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" (scheduled at 2024-12-15 01:00:00+00:00)
+[2024-12-15 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" (scheduled at 2024-12-15 01:00:00+00:00)
+[2024-12-15 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" (scheduled at 2024-12-15 01:00:00+00:00)
+[2024-12-15 01:00:00,016]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" executed successfully
+[2024-12-15 01:00:00,021]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" executed successfully
+[2024-12-15 01:00:00,022]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" executed successfully
+[2024-12-15 01:00:00,023]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" executed successfully
+[2024-12-15 01:00:00,024]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-16 01:00:00 UTC)" executed successfully
+[2024-12-15 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-16 02:00:00 UTC)" (scheduled at 2024-12-15 02:00:00+00:00)
+[2024-12-15 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-16 02:00:00 UTC)" executed successfully
+[2024-12-16 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" (scheduled at 2024-12-16 01:00:00+00:00)
+[2024-12-16 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" (scheduled at 2024-12-16 01:00:00+00:00)
+[2024-12-16 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" (scheduled at 2024-12-16 01:00:00+00:00)
+[2024-12-16 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" (scheduled at 2024-12-16 01:00:00+00:00)
+[2024-12-16 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" (scheduled at 2024-12-16 01:00:00+00:00)
+[2024-12-16 01:00:00,009]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" executed successfully
+[2024-12-16 01:00:00,012]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" executed successfully
+[2024-12-16 01:00:00,013]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" executed successfully
+[2024-12-16 01:00:00,014]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" executed successfully
+[2024-12-16 01:00:00,015]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-17 01:00:00 UTC)" executed successfully
+[2024-12-16 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-17 02:00:00 UTC)" (scheduled at 2024-12-16 02:00:00+00:00)
+[2024-12-16 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-17 02:00:00 UTC)" executed successfully
+[2024-12-17 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" (scheduled at 2024-12-17 01:00:00+00:00)
+[2024-12-17 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" (scheduled at 2024-12-17 01:00:00+00:00)
+[2024-12-17 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" (scheduled at 2024-12-17 01:00:00+00:00)
+[2024-12-17 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" (scheduled at 2024-12-17 01:00:00+00:00)
+[2024-12-17 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" (scheduled at 2024-12-17 01:00:00+00:00)
+[2024-12-17 01:00:00,008]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" executed successfully
+[2024-12-17 01:00:00,014]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" executed successfully
+[2024-12-17 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" executed successfully
+[2024-12-17 01:00:00,019]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" executed successfully
+[2024-12-17 01:00:00,020]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-18 01:00:00 UTC)" executed successfully
+[2024-12-17 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-18 02:00:00 UTC)" (scheduled at 2024-12-17 02:00:00+00:00)
+[2024-12-17 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-18 02:00:00 UTC)" executed successfully
+[2024-12-18 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" (scheduled at 2024-12-18 01:00:00+00:00)
+[2024-12-18 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" (scheduled at 2024-12-18 01:00:00+00:00)
+[2024-12-18 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" (scheduled at 2024-12-18 01:00:00+00:00)
+[2024-12-18 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" (scheduled at 2024-12-18 01:00:00+00:00)
+[2024-12-18 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" (scheduled at 2024-12-18 01:00:00+00:00)
+[2024-12-18 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" executed successfully
+[2024-12-18 01:00:00,032]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" executed successfully
+[2024-12-18 01:00:00,040]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" executed successfully
+[2024-12-18 01:00:00,041]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" executed successfully
+[2024-12-18 01:00:00,048]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-19 01:00:00 UTC)" executed successfully
+[2024-12-18 02:00:00,001]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-19 02:00:00 UTC)" (scheduled at 2024-12-18 02:00:00+00:00)
+[2024-12-18 02:00:00,002]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-19 02:00:00 UTC)" executed successfully
+[2024-12-19 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" (scheduled at 2024-12-19 01:00:00+00:00)
+[2024-12-19 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" (scheduled at 2024-12-19 01:00:00+00:00)
+[2024-12-19 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" (scheduled at 2024-12-19 01:00:00+00:00)
+[2024-12-19 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" (scheduled at 2024-12-19 01:00:00+00:00)
+[2024-12-19 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" (scheduled at 2024-12-19 01:00:00+00:00)
+[2024-12-19 01:00:00,011]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" executed successfully
+[2024-12-19 01:00:00,014]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" executed successfully
+[2024-12-19 01:00:00,015]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" executed successfully
+[2024-12-19 01:00:00,017]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" executed successfully
+[2024-12-19 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-20 01:00:00 UTC)" executed successfully
+[2024-12-19 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-20 02:00:00 UTC)" (scheduled at 2024-12-19 02:00:00+00:00)
+[2024-12-19 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-20 02:00:00 UTC)" executed successfully
+[2024-12-19 06:12:09,372]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2024-12-19 06:12:09,414]  INFO {cps:178} Starting Calibre Web...
+[2024-12-19 06:12:09,749]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 
-[2024-11-28 13:37:33,359]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 13:37:33,360]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 13:37:33,361]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 13:37:33,361]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 13:37:33,362]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 13:37:33 UTC], next run at: 2024-11-28 13:37:33 UTC)" (scheduled at 2024-11-28 13:37:33.361537+00:00)
-[2024-11-28 13:37:33,362]  INFO {apscheduler.scheduler:641} Removed job 5c762420c8ee4a2db4abeeda3c95ffc3
-[2024-11-28 13:37:33,372]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 13:37:33 UTC], next run at: 2024-11-28 13:37:33 UTC)" executed successfully
-[2024-11-28 13:37:33,492]  INFO {cps.ub:764} github Blueprint Created
-[2024-11-28 13:37:33,500]  INFO {cps.ub:764} google Blueprint Created
-[2024-11-28 13:37:34,433]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 13:39:17,168]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:39:17,181]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:41:45,015]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:42:04,357]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:42:45,723]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:42:45,729]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 13:42:45,729]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 13:42:45,730]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 13:42:45,730]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 13:42:45,731]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 13:42:45,732]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 13:43:34,494]  INFO {cps.admin:1943} Missing entries on new user
-[2024-11-28 13:48:03,744] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36076, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03\x81\n'
-[2024-11-28 13:48:03,747] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36086, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03],\x19r£\x9fÁ?å<nC\x8deÎþ\x89¹ÿ%\x04Ý^D\x1au1+\x872êù ÿ¼z\x08_\x8fÆìÒÛûú .ÄZ\r\r\x94\xa0\x06¿9É\x1b\x9fÅí.A4\x12\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ºzz\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00\x0b\x00\x02\x01\x00\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\n"
-[2024-11-28 13:48:03,753] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36100, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x031\x84Ð\x86\x15Éã¥\x8948$+QÝ\x1d³ýØ\x0b\xa0µÅ\xado9Ã\x1aØ\x86Cã zê|\x91I£°Âð\x13u\x95á\x9b|©Ø\x98AçàìH\\V¤$ûGË-í\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06º\x8a\x8a\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x00\x17\x00\x00\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00\n"
-[2024-11-28 13:48:03,754] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36114, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03"÷½lD#\\\x9fÀ\x1b\tò0Æu\xad6o\x13¿1ä{i\x1c\x0e\x8b"&)\x03X \rÈ¡"Pò\x85pÀã5÷0¬\x07¦~ÐçwÏï¬!í¢ÊÚaÐ\x1e\x1f\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Z\x9a\x9a\x00\x00þ\r\x00º\x00\x00\x01\x00\x01\x0f\x00 ¨\x87ò/ókaÚ\x92=3J\x13N¤Ñ\x93\x8bwi\x1dë\x1a.Ï\x17àW\x86i\x1dQ\x00\x90\x91\xa0®±]6UN\r\x7f,I >Û\x00¹\x0fKû½«\x16/Ô\x96ÑÉìJªf7É\\\x1aÆ\x0cuj\x1f\x9eô^\x1dx\x86|\x16\x92¹¹Ø\x0e\x17\rX°á1eI¦iurºøüxùÕ\x9dj{¢\x92þú\x97é0t!\n'
-[2024-11-28 13:48:03,755] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36126, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03ðÿ\x13]d\x94ç\x17r\x87sãÈC\x9e®æí²º\x0c:\rì\x0b[¯W_\x04«³ ÑV¡\\÷\x87L\x80\x00QKîûî²K\x03G¡\x8f{\x84õ®éÿÅ\x80d®E\x85\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06z**\x00\x00\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00\n'
-[2024-11-28 13:48:03,756] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36136, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03d\x04Ä\x81<Õr\x0bÏmõ1»\x9eÂn\x17à¥U\x15WnU5\x88s¯¡}Ò² 7H¯\x08¶JOµWÍçFÕ7/æ\x0fn¯u³é>üÁiÑK×\\\x1d_\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Zºº\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06\n'
-[2024-11-28 13:48:05,458] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36144, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03ØÁ5 \x0e´\x05w\x01:cÙÒaE:hIL°Ð]bj)Ú¦¯\x8db\x85{ P\n'
-[2024-11-28 13:48:05,460] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36160, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x0332àç¿³\x95%\x1b±)\x03A\x1b_$¹<èÉû(¨lÇ\x11y\x86\x83àCl )\x8b\x1b5|\x9d\x85¶\x94ÉÖbø\x0e\tMT\x89\x13\x8dvâ¹\x8fîñ#óÑ\x1a\x02À\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9azz\x00\x00\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00\n'
-[2024-11-28 13:48:05,466] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36168, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03#ª\x8d³~\x00\x8b[e\\cÃ)\x80n?\x97N\x9c\x0fY2$âúág\x1aOº\x1bÁ _¸îÝªm\x87Ðêip\x8e<\x91\x05ûk\x8b\x8e\rßÉáD,¸\x8bÝ\x1d¬\r\x08\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06z**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00\n'
-[2024-11-28 13:48:05,468] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36178, 0, 0)) Invalid http version: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03\x08H\x0f}\x8e%Ã-j$4\x1a\x92r\x14\x193ß=\x88èw8\x90\x7f.\x13\x8e[\x06Ö¦ ßXÕ\x99OI\x18KsÖ\\`\x17Àhã¿\x03*ÊÁH~Jæ\x85\x88}<òÕ3\x00 \n'
-[2024-11-28 13:48:05,469] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36188, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03f<MúvÏ\x90ª÷*QK\x9d\x1eZ6?,i6®Þ\x95lC\x1e\x975yï\x8e\x9f Ã=Å=_;ô\x1d\x8e\x92-\x0eàüLTëcÆ®ÒugOõk×#ôý\x95"\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Zúú\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00þ\r\x00º\x00\x00\x01\x00\x01\x1c\x00 c\xad\x97ÉßA\x91ºiI³í0b.c°\x85u@\x8bü°ÄpS¤lj;g\x1f\x00\x90MÅ¶X>5\x81cJÈWq\x81\n'
-[2024-11-28 13:48:05,471] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36190, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03x¾\x13@\x8b\x8e\x9c\x12ëé\x19¡¼WÊJ#Z-Îs\x07\x1bz<S\x04Ä\x88YþÑ \x93\xadÔ\x99Þ\xadbó\tÛeO\r\x83}J\x94\x8dÃíñ\x11B^ÀvaaF\x88@-\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9a\x1a\x1a\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\n'
-[2024-11-28 13:48:07,558] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36206, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03\x1dA\x02\x0cñ\x0bÙÿ¶×±b_nm0ÅO\x05\x1e3ë\x8c\x1ayÿ\x14g\x1a\x13/¾ \x04ÔX2A\x19%Ë\x0b\x92[lQ |åÓÝë6\x8cXõ\x05\x0e\x9f\x00ê20\x8b7\x00 \n'
-[2024-11-28 13:48:07,559] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36212, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03\xadÌ\x1cØ\x9fS«úS$'àÖá3^¯\x86Zô5xÙ¿Ùß\x02íXKCl ½\rË ©:\x87¹Ãû\n"
-[2024-11-28 13:48:07,565] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36220, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\'\x01\x00\x07#\x03\x03\x92ÃòÌ\x02Þ\x86s²a\xa0¼×ýV¬µG\x80\x10Ë\x94\x98\x0c~])\x85ÌïÛ\x91 i\x95eø\x01Þ\x0f!×m\x11ë\x0e\x06P<6µ\x1crA¶Áxý@#\x87_.¢ë\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06º**\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00þ\r\x01\x1a\x00\x00\x01\x00\x01J\x00 9³\x9c7)\x12\x15ÈxÌ\x1fÛ\x1b\x9d\x0b\x8e\x02\x9e¨62CÑ \x90vÜ\x99D¯úd\x00ð\x93wéÐa\xa0Mô\x07:\x92\x077Ù\x9c²\x0b¢7h±Þû\x03¿>F\x03\x01âÁ |õr-\x04E\x82\x0e\x18XD+ÍOu\x05kt\x16»o×?\x83\\\r\x15ö\x04\x88WÞ<\x00`\x9a\x81ùA(x°æõ3\x07æ#Äuq\x7f\x17\x1f¶ç4árPQ\rFÁõÊ®\x006#÷j\x000\x1aÕÐñá\x93·ªã@\x80;eü\x80¾\x8a\xadX\x00\x07íõÄØ¿y\'\rE8\x9e¼\t\x8f\x8cWÏÉ0\x89f¤\x88Þ\x8bô,\x00¬)#\x14þÈ3\x8c# !\x020Üo~;y\x85:Í\x1cj\x9dn´Yj8Ì(íJ\xa0²ýË"`Ö\x8a\rß\x8f\x1f\x1dO\x8eUr1\x05\x9doÛ\x89\x00»wc\x0eMÓq\x16\x1c#p|{\t\x99(\x1d\x07ñ\x849OÏ÷T8h½ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00\n'
-[2024-11-28 13:48:07,566] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36234, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03\'á3äÌ=)«.\x10pj/\x01OþIñ\x0bø\x83á.z\x8a\x0fEê{\x82ø\x8f îÊ\x84·v\x03\x1d\x12®´c\x1dgÌÊH\x12\x8c\x13>\x0e¢"Ét\x91ìGc¦\x18X\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ZJJ\x00\x00ÿ\x01\x00\x01\x00\x00\n'
-[2024-11-28 13:48:07,567] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36236, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03\x9er\x10Tj\x8b¡b\x88Ù"\x0f\x03\x13ö\x13£_\x10ü.oÙþ\x12<¼LT\x91Ù× ^\x93¶\x12{\x8a©\x8e\x00ê$ý£Fv\xa0K9^\x80JL.\'þ\x8cU\x14ª5è\x88\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Z**\x00\x00Di\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06\x8a\x8a\x03\x04\x03\x03\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\r\x00º\x00\x00\x01\x00\x01[\x00 ]X\x8e)Ë$Ñ^6"¹\x80÷IÓÄÂä\x0f\x12.\x16yªÛb¿¦\x05\x83\x1dZ\x00\x90\x98\x1fèV\x10c\x0bÏë{\x9f\x82\x85àa5\x9a\x1c»q»¶5UÆ\x98\x8bøáãf\x00\x1f\x068\x1b\x8eY\x7f$¨èqùÐDù\x1b§$OxÀÕ\x01\x96\x81^\x17ïÑ£®±Íð \tÄ¾§ð\x8c\x14\x908ãpØh\x89îX´\x93¤\x18\x82jô\n'
-[2024-11-28 13:48:07,568] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36244, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03÷Êª\x94¦,\x1b\x15ëoQí9\t5Ò´B<\x81Ã¼4\x92ú\x1bÂ\x91_\x9a\x1c² E\x08\x94?\x0eJJú\x13«#Òç¾\n"
-[2024-11-28 13:48:07,767] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36256, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03\x93ãÃ\x89Ûä\x01HC£\x17bê\x81f_µ\x88«iO\tªÞ\x0e¼b\xa0P4 ¨ \x93\x8e\x02mÕ(\xadI>Õ¾Wê¡\x89=C\x8bvÖÛ\x1bCQÊ\x9cÜNE\x89¦²\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9a**\x00\x00\x00\x0b\x00\x02\x01\x00Di\x00\x05\x00\x03\x02h2\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.net\x00\n'
-[2024-11-28 13:48:07,768] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36262, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03ÏÂÙ\x16g\x81³\x97Ó\t¦öáÕ¦Y\x97\x1c.pYÑþó\tÔ(d¢\x82=\x1e \xa0I\x05\x86½î\x04®^\x0e¹>\x9bsõ\x98§GÍ\x9fD\x10\x8cCqÉ®#_¹Ds\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06º\n"
-[2024-11-28 13:48:07,776] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36276, 0, 0)) Expected GET method; Got command='\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03«\x00º¼ZøAÓ½UØ'; path='¶ÄÞT·'; raw='\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03«\x00º¼ZøAÓ½UØ\x1c¶ÄÞT·\n'
-[2024-11-28 13:48:07,777] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36286, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03¼U\x87mþmóÂ\x1bif¤\x06P¼79«g\x9fB\x06Êiºñº%ò0e\x99 \x14wú\x15\x14ÅÁ\x0e\x1f0®\x14J²¹\x86\xa0\tBÞÊì\x0b\x92f\x15f¼_Á/Á\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9ajj\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.net\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04À¿a$\x1fgÎ\x9b¢\x9eÔdÀQ\x1bxa8q\x89\x06\x8dAf\x9f%ð\x8e´¼¨ÀG\x15ü\n'
-[2024-11-28 13:48:07,779] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36294, 0, 0)) Invalid http version: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03:©Ð\x03°Î\xa0WC»~\x01?¥Î\x1b\x16Å\t+éÄ?¥ëo¹\x19¼\n"
-[2024-11-28 13:48:07,780] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36296, 0, 0)) Expected GET method; Got command='\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03ãj\x98é¹\x91eL¡1Åoª\x82a#qQâ\x054afØR\x99\x97a0^Èò'; path='.\x04GCyáNNÀ¹VÏ'; raw='\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03ãj\x98é¹\x91eL¡1Åoª\x82a#qQâ\x054afØR\x99\x97a0^Èò .\x04GCyáNNÀ¹VÏ\x1c\n'
-[2024-11-28 13:48:07,949] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36304, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03¡)\xadlH=\x80\x96\tGù½v\x84\x01\x91²\x87f%ñK~\x81éè¡¶T"ì¬ øÂ\x8cN3è\x98N\x87\x03)öä[mþ\x97ÿ\x97bmfÓí×\x18î\x95i÷ÿ0\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Zúú\x00\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04À¹\x06a\x07\x92\x0fa\x93¸pÆ\x08±\x040Î!n[<,ù¸z\x0céqò\x9a\x8c¬\x03\x18`Ê|¤\x8a\x8cR|È>\x81¸ÊÔ\x87o2\x9e\x83ùµ\x95R#ê;OïSE\x8bò»uå\x1fÖUª¥\x81\x85©\x83\x85^Pi\x88\x17\\\x17Ã£Ö\x91\x86\x8e\x01Á\x15)\x87\x1cÄ\x03¤c¬\x1b2\x9a]\x034;¤7ÜÕ\x9cv\x85¯í\x9c\x8eíÕp\x8d«\x11>\x1b< ñ\x14&¼\x9aK¹\x9a \x1aJc\x0bd\x97\x05ràÒRÛ\x86ÂÏc~3\x1aTâä8 \x8c¡\x03óÅCC_vÃf\x82ÉÍ³ö:ÖJ\x1b^Å$zÐ%²÷\x1e\t\x9c\x07\xa0ÈÀ\x93%E\x8a\x83Î\x9cLC´ÓX½Ë$z\t\x12r\x94\x95|$wìt\x88_ÒVrÌ^À¸£\'a±¯v¯¦{?Ý\x97\x17·Â\x14éÙ\x1efqd\x9c1\x18u\x9c\x8f\x13:\x82õåe\x9dxL\x84S´ÞöQ\x00Ç^\x91b\x8a¤@i¿\x16 ª1?\x05Xn¦\x94KúãmÌ\x852kz\x91¯\x84lSêÉ/´\x88«w)a\x04\x8b® \n'
-[2024-11-28 13:48:07,950] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36306, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03s\x071n´r\x8fo\x9d\x898ènþ\x08Nø$~S\x9a\x89º\x9dÆ\x1e\x86\x82}\x18¨Ø Å\x9bá\x90\x00\x08C\x94K=?¿ø\x00\x1bõD(Ek\x11¯¯\x06\x83dò³õ¥\x9a\\\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06z\x8a\x8a\x00\x00\x003\x04ï\x04íjj\x00\x01\x00\x11ì\x04ÀÖØ\x94ä(V61¯\x92Ú)îc\x00Pk\x07Iq`\x1a\x84\x86:õ\x82óå\x07\x8b`¨ée\x9e\x1a¹\x9d\x1a\x13\x93çl±\x86Ú\x85Õã\x0bàæmmãW¶³¼\x15Ú\x8d¸\x05xiQ\x82\x00,\x8a³òkkè#I\x8aO°Ð\x8dp\x9a\x9b\x8a\x91\x86\x10Ê¹EqÆ\x16K[z\x90Éºjy\x8bä\x8b\x06E44F\n'
-[2024-11-28 13:48:07,957] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36308, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03dMÓuâ\tå¯¡VÓF\x95$\x176Æy<\x80\x07\x7f5ÉÚ|\x88)êñ)Q \x9eng\x89\x11HUP£\x175\x8fF\x97\x86HÀsLNóÒÈ\x0eÇå*\x0fÈ³\x0b\\\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06z**\x00\x00\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.net\x00\x0b\x00\x02\x01\x00\x00\n'
-[2024-11-28 13:48:07,958] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36318, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03Å\x18C\x1a\x13ñªzH\x1dÒû\x08±(\x0f+M>r\x00Îí\x83é\x8e¿Ü\x12ð¶ö >Y\xa0z©\x91o\x86SáæÁ\x99ò³<Äc\n'
-[2024-11-28 13:48:07,959] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36320, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03\x94s¯\x08!\x82æÇ\x95Þ\x9dQ"\x90=u\x0c\x1c\x9c\x981Ké`lÕY\x01d\x8brÍ 6ª;Èz\x83¬¼è\x9f/\x00èåÞÀ¹Å%w³>Þ·³úóQö\x92*Ý\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Z\x9a\x9a\x00\x00þ\r\x00º\x00\x00\x01\x00\x01¢\x00 ÷Ó(W\x91ðvµuúñ1\x93C»\x08\x14\x81\x0c\x10\x12\x05\x8e\x1b\x81KjVPæ\x9b \x00\x90\x90\t/%ô\x0bïÌ\tt\t°é \x17¡\x05Å¥I\x95\x8e\'¯²³ÝK\x06^á\x87cU¦Ä~¨¿8\x7fú\x03y)¢m\xad©\x05\x969tù7Íº[\n'
-[2024-11-28 13:48:07,960] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80936da0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36330, 0, 0)) Invalid http version: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03Û\x8d£?$å]\x91¼*W\x82\x19Ti¥¡\x10\x8e!¿´\x04\x06SA2FÊ\x14§\x90 oð\x11ôW\rÑ\x01&@\x02j\x10êy\x8d:Ã)E~\n'
-[2024-11-28 13:48:11,877] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36342, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03e\x04ýp[è\x12/dâóÄ\x15ÇNSßÎ\x9b\x00\x92â´\x0e\x18\r\x17ç\x17\x1e]õ \x90PyN®_)ÕÂèN±À-´|(\x1b\x89\x12\x8e\x1ape(e\x12i$Ó\x91ë\x00 \n'
-[2024-11-28 13:48:11,880] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80936da0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36356, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x037\x04\x0fgÃÀé¹\x05\x9a\x98çèÕ$\xad\x02\x96isÎÉ</\x13\x17\x05/ßÛÏ\x86 U=é\x0e÷\x99Õ \x1d°áÈH/¤O*\x9fh¥åúµxãö*|BB\x08ì\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9aêê\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\n'
-[2024-11-28 13:48:11,881] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=18, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36380, 0, 0)) Invalid http version: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03F§\x87\x87½\r\x7f@ \x00ºí\n"
-[2024-11-28 13:48:11,882] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36372, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03¤\x92K=\x9bù§\x80\n"
-[2024-11-28 13:48:11,883] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36382, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03A;\x81è\x0cQP|\x0eS\x1b\x17:ÛOÔ \x94\x0e§¸å1h-\x81\x9eÜLt\x81\x8d \x0eDÐ±\x08Î\x1au\x8dÄ\x90Zá\x90·C\x92·\x80qü\x95Xù#)iEäEC\x13\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9a\x1a\x1a\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.net\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\n'
-[2024-11-28 13:48:11,884] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 36388, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03^\x7f\x02\x13/öó\x06\x0f¢C7-\x17&³»¨* Sâ\x818ÝÇ&5\x16Õ\x0fº \x8c\x9b\x19\x94å\x1fl¿\x99{\x9f\x18\x82^½æ&ï\x96\x1d\x02\x83\x15±3}\x9f¤\x9fç.\x83\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9aJJ\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.netþ\r\x00ú\x00\x00\x01\x00\x01d\x00 ¦\x90\x08\'¥R\x9cÚ7r£ñ¼\x9a#\x04ë\x7f\t#9dsêýPÔYþTQ~\x00Ðÿ\x1f\x81\x95<fJÅ¥´úÐ"éúo\x99¯\x9cjq¿ª\x94ô zÓl\'ðÓ\x0bH\x9f\x024¯\x86t\x18¿f\x17û«*ÄqÈVêÒ\xad*ç\x81*\'\x83s¸v}ió:ÙK8X`fqÇ\xadX\x1cô/V¬\x95«õ5/x«\x12µ\x99årv1ú\x9d\x9dHxän\x97Óóä/1Rj»ªkGN\x0e{r°·TÜlßXqq©\x0bi\x0e»\x06-Ù\x0fé\x1eÇhyT\x13\x94ìV\x13\x11Uþ^s~\x9e\xad\x8fç¬&\n'
-[2024-11-28 13:48:14,017] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43760, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03Z£©\x9er)×Òº:\x14l¡jÌ°¹hR¼\x04\x8f\x92Á \x85)±þ\x0b\x96Ø àßHØ´\x917¶Çc\xadÀ4\x0c\x9bº¡.\x92Ì©»g®\x82\r`ü´Ow<\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06zJJ\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00#\x00\x00þ\r\x00Ú\x00\x00\x01\x00\x01á\x00 \x9bwÔH1æÜÊD\x84Í\x9b\x08È+¡ëÕè¡4\x083þ\x12\x82ãLG-\x82h\x00°úq\x9dN\x9cÃD6ë\x9c"T\x12Úç´¶-\x88ð\x83m$©PEÞ\x1dÚ\x0f\x8eh\x81`\x18\x94?\x13ø\x8dó\x85´#Ü\\\x17\x8f\x18Eú\x9d\x00ÈÉY\x9a"ÀG[\x1e£\x83!\x15IR\x90#4\'é¥ZÑ\x1cù\x96\x91C\x17 _k«¾ûì\x8c\x08nnÚ)@ì²èK¯\x85\x9ck³¯*ÈÍò¢\x15ú#\x11ÿ¨\x13\x06`\x0cFQè\x87\x1f\x99äsFöÇ°ò¶PX½ì:\x15\x06³âÏv9\x81µ\x10d£¯Tw\x9c\x89£]ÑW»(Ì{&jÉ\x83¶ß\x12KÞÌ©\x00\x17\x00\x00\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.netÿ\x01\x00\x01\x00\x00\n'
-[2024-11-28 13:48:14,019] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43762, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03?ëø_êÏ^\x92Xèæ/mø%å©f3»ÞB¼\tò \x8c¬Ï}ÆÐ \x16Y¯=3è©\x1cf.-xgÂO\x94\x8b\n'
-[2024-11-28 13:48:14,026] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43764, 0, 0)) Expected GET method; Got command="\x16\x03\x01\x07'\x01\x00\x07#\x03\x03\x0e"; path='æ\x94ö\x8eÊ\x13'; raw="\x16\x03\x01\x07'\x01\x00\x07#\x03\x03\x0e\x0cæ\x94ö\x8eÊ\x13\n"
-[2024-11-28 13:48:14,027] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43774, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\'\x01\x00\x07#\x03\x03#\x18´ÌàM!LßÖÇ,ú¬\x98i,\x90¡\x87\x17^½3·i\x81JM\x980å zÕh_I¡\x7f\x81|ý\x00É2]îýÒ><ô\x9d\x0bJ\x0b]d9¶\x17í\x0cg\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ºêê\x00\x00\x00\x0b\x00\x02\x01\x00\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\r\x01\x1a\x00\x00\x01\x00\x01\x88\x00 Í\x92h°z\x0f¦\x10¼@«ô°=¸\x1aáêbH¾\x92öº¤\x92\x03ÉYÊu#\x00ð\x9c09f¾ûWÑMê\x8bme;B®\x05\x02\x7f|BÎ\x7fÔHþ\x1aU_®ÕIH\x88\x13;\x9b×g¥É¯¿ÓÒ\x92mU¿\x04CÛ6\xad\x87Þ\x90\x14h&\'\x89©§>\x8dFö\x17ö½7ògß\x9fy\x16±c sÿ\x89\x95\x7fgÆ\x97Ó:=bâ\x10\x8dv÷ü¬H>^\x05µ\x8f\x8c\x9a\x07¢)\x97\t÷®\x90¨íÑÇ\x85!\x01\x803\x82\x81T²á\x90áu;Ó\x9e\x8a\x94\x167éõv4ØÍyº\x9cHOtË\x0ft\x8b\x93ó!Òï\x80\x8a/\x0c¶\x14\x02½\x87ª\xa0¯\x16\x16°ND\x9c})\x15@Tö\x88QþÌ\x869Ô\x91\x87Ë®ìg¹PúøÚT#yN<[ÃÐ"U¿BJ\x94"óµETz\x8bx\x1dó¡ñC\x86]¦Bzé«\x1bCö\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00\x17\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x12\x00\x00\x00+\x00\x07\x06\n'
-[2024-11-28 13:48:14,028] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80bcfe80 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43786, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03ß@ùA\x03F8ðû\x85\xadO\x82\x13ÍTc£?\x86ë\x0f?\x0c¸öÄå;\x0b\x812 <s½ÏÿCW)ßo\x1e\ré@x\x8f\x04{\x11ÖÚ^\x10\x08\x94¸ÅsÒl\x13}\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Zjj\x00\x00\x00\x17\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04Àõ ¼C\x1b& \x03&ë\x86¡Åvh®ë5¿EOÙà\x96&ÕÄèH,ÃÉ0\x9c|5`ú6öE¿ÁápFcvÏeS»ùD\x05ðR_8\x1f,J\'E\x82\x81(Ð\x7f_w¬`uM«\x12Ê\x04Ì\x90\x89\x983\\Û\x00c{¬, Å7f1\x0f£cD\x9bzÄ\x192\x1eã\x8b|\x82J\x8eÈ\x0cÜ\x18¨\x82\x14{ö\x16R\x08feñè°\x16¹\x14X¥^é"F\x9f\x17\x9b\x94*YP`¥\x8d¤}±J0\x13ì\x82bY«\x92æO§\n'
-[2024-11-28 13:48:14,030] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80936da0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43796, 0, 0)) Expected GET method; Got command='\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03÷ò\x8d\x87'; path='\x15[È'; raw='\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03÷ò\x8d\x87\x1f\x15[È\n'
-[2024-11-28 13:48:14,183] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76ba3ca0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43800, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03c«;º;#\x13ÆÇ\x9d4\x979\x1d¶=ý(>¶z\x02E¥\x0bEèE:Â}ø \x15gß0ÊU0YBÁ8óÃR,×\x1d\x1e\x8e\x9fç´@\x98NËe?JFM/\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ºªª\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.netDi\x00\x05\x00\x03\x02h2þ\r\x01\x1a\x00\x00\x01\x00\x01\r\x00 Ír\x0eµæQëpaF\xa0ÓÙm:NÍà3\n"
-[2024-11-28 13:48:14,184] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43812, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03&ûk4¿Ö\x00Tn\r#ÑûÕ·6É\x89D\x99_¶\x9fh¨TG\x13\x12#)î î\x82\x80OÐî¥½>»"Uáóà\x7f[\x84;å¦\rB©0\xadÒ´»OwD\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Z\x9a\x9a\x00\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\n'
-[2024-11-28 13:48:14,194] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80936da0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43818, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03òº,\x9f\x89Ø\n'
-[2024-11-28 13:48:14,195] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a91780 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43824, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03RÒ4ú\x12ä\x00¥Ð\x85\x92òu±<ÍöÆW"«J0\x17z§Ð\x8dAä\x8dz J\x1d¦1\x02lý×\'ltZ%ÊNÌ"b§Õ¢`.w\n'
-[2024-11-28 13:48:14,197] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe769040a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43834, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03Ø\x9c¿\x93hí3lü!ÿÐ&\x83NJ\x81HÁöcQ\x83n\\"4®víÎ¥ xÅ_ÛWm×±ØlþìW\x8aÃÅ\x1bJNý~\x1fj1Ij\x07½¬\x8cz5\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06zªª\x00\x00\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.netþ\r\x00Ú\x00\x00\x01\x00\x01Á\x00 \x96Ä&µhøãì1\x94îD\x00\x17uDétöûS%â¿\x90\x1a\x1dÀé\t\x82\x1d\x00°°\x83\x92Ëå°þ0>`\x83\x8e2\x11¡\x84Ï¢?zÙ\x9b\x84í w\x7fa¹]\x91\x99Ñ<Ú\x98\x19x\x95X´«²¢\x04&Ç\xad\x1f\x15%R\x10Ô[{{\xad\x8bzé²\x14½\x17tiºÏÊâ_^®\x87\x01[ªu¦\x1b¯\tëÔ\\Js¦\x8e\x1b\x92qªñ\x01Â#¨\x90ì\x87í27:ÏS§Øª(§µè\x9a>\r.³Ñ[üÐ:&³f)£¢8ëÿXåäÎá^)B>Ú4\x83\x89Rî\x14\x96ô\x1b¿qÛâ\x1cÆ\x1c\x9c¼\x19\x8f)f×ù£KEI\x94ý\x85(\x00\x0b\x00\x02\x01\x00\x00\n'
-[2024-11-28 13:48:14,199] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe814d79a0 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 43848, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03\x1f\x8c¤\x0cByÏH\x90\x88äWn\x10u\x05Ò\\°\x0e\x9aJBû'g\x1dÑ,ZÌÉ ºT^Mg\x1ed\x9eÌÖ*\x08\x7flE0Qeæ\x9eÖ\x89iÚ\x0c$¬qpè\x06\x90\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ºjj\x00\x00\x00\n"
-[2024-11-28 13:48:22,909] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80be5f60 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46854, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x03ºCº±ï,\x99E\x92FB-+ñ\x15s\x9d«\x8eL0kD\x0f\x08¦B\x14ïh\rd \x87¹yçoî\x11J©ü»\x1a¬ûPe\x96\x89\x0cR\x00\x7f\x8f\x97\x7fö**¥9I^\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9aJJ\x00\x00\x00#\x00\x00\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04ÀPÆqAB®Qñ\x93í\x01\xa0®\x971P\x10<6\x07\x95YáÁ\x86ªÁ\x89êÉdéÏ´ÆZ«L¹òhÆ\x0cj\x8dÒô\x03\x1daº \x81nÒø\\Ú3\x02áÜ±¸æi\x1d0º \x8b\x1eË1v\x80:³÷³\x1c#H\x81Õ§S\n'
-[2024-11-28 13:48:22,911] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80be5f60 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46856, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07'\x01\x00\x07#\x03\x03¼Þ¨'êÎ\x1cO\x04\x8d&\x91\rQt\x1b\x01;\x89ðÂìÁ]\x1d÷\x92\x1dÕÎÇ\x8c 5]?\x11Ô@\x07\x14wLKû\x18tKëS\x8d\x0cã9\x9cÔé\x15çÅé§ËÁ\x1e\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ººº\x00\x00\x00\n"
-[2024-11-28 13:48:22,916] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80be5f60 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46866, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ç\x01\x00\x06ã\x03\x03O¡\x82Ä\x88kÆ\x98\x8d.Ï2Ã\x8b\x85ûp¹ýÍ6\x9ddzEo\r÷ø³\x84Ê é¶Y¾\x8e\x16Ã\x90ú\x02Ý\x07K×ï7Æb\x1a{\x87\x99\xa0\x07Pá]\x90\x06\x1a\rÉ\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06zÊÊ\x00\x00Di\x00\x05\x00\x03\x02h2\x00#\x00\x00\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\n'
-[2024-11-28 13:48:22,917] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe76a92740 object, fd=17, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46872, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\x07\x01\x00\x07\x03\x03\x030Cè÷ÿßbòö«ðI\x1dA£j\x8bânðÖ\x8cq\x89\x9f\x00> \x8e0u\x90 C¼}è<o\x9a\x97\'"*\x1f(®µz\x96ÕÙMFÂ\x91¶ð´ßøåÆ\x19\x04\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x9aJJ\x00\x00\x00-\x00\x02\x01\x01\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04íjj\x00\x01\x00\x11ì\x04À\x9a×_\x9a !¢\x12\x848\x06\x1fíû\x138\x18r=\x94$4Ysó\x91\x7f\x15ÃXÚÖ9Q<\x06sá3Í9\t\x85\x14\x99,ó\x842\n'
-[2024-11-28 13:48:22,918] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80be5f60 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46884, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07\'\x01\x00\x07#\x03\x03\x1fAQÉäH/\x8bH\x83×Ý¼åköêB%mó\x84§3økG\x14"*Í\x8f WWC¸2ääþ\x82\x00^ÒB\x0ejú¦¹!\x0bÇÝ>\x89g\x10·À\x97"VH\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06º\x1a\x1a\x00\x00þ\r\x01\x1a\x00\x00\x01\x00\x01Ù\x00 ¥ý;\x17\x8b³\x07!F<:\x0fñ\tÅ\'ð8\x0bm\x1fX\x95!v\x04B*\x8e\x15\x147\x00ðÏ\xadoë\\\x00<²ü\x0b¹US\x93¾×,ÌÙ\x03\x08ª{Ü®O<S\x98«æ\x03ñy)\x1b\x01æyË1WOÓG!+?±g¹ÒbgQ\x99å\x14ãµz!¯~_\x93Æ@\x98Õ?\\ÔË«£Û7\x8c7±\x07²áxêñ\x84ft\x1fÇÊ\'pG\x1f1ð<\x8bÙ"ö/=ú}G±¦,6\x817ILÚûóË\r£\x15\rU\x86\x1fÙFÝ\x98\t\x15>ÇÊ¼r½íkÂ¹´^{\x87\x9b\x83t~"/P\x8bC>6\xad¹É!4m,K\x96J\x8b\x8cë²\x94¬\x91a\x97\x91#ßöÑ¦×\x04\x8b+1\x9e \x92\x92F\x98\x8ajµ\x1ep9%#Ñ6\x84!2,jú4PBl¢\x7f¾×/h4x\x873K§_w®Zß\xa0úÖU;)dÒ\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.netÿ\x01\x00\x01\x00\x00\x0b\x00\x02\x01\x00Di\x00\x05\x00\x03\x02h2\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À\x8a³\x85ô%\x86êÀ\x98\x9b°AlÊ(Ì\'\x7ff¹\x88µ°;¨Æ\x9cÄHZ\xadq¦î@Z\x89æ¶R¢0\x14t\x96Ú\x80\x06\x1bGwFp\x10J\t\x931*K\x00JVZËIHãd³µ\x17ã¥G\x90\x9a\x0b\\ÅËvÓ\x8fS\x84e*è*\x8fd[_Q´»v.Ökr\x01\x18\x99%Ð\x18A\x0c\x1b.çÎU\x94q.;NÄ$G»\x898À\x993BEuç\x04\x8eú¬Â3¬T]\x0bE\x12\x17ÌÞ:À\x9e\x83w\xa0ó{/º\x84Üª!¨\x10\x86\x84\x83\x8aóq7ÐæY\'fkDK\x92;7«:Óºå\x04\x04\x92r¥tÔ9Kë<aÇHk¦ÅYY0-b¿¯Ô6\x87e,ÍÌ\x0e>`ÃÃñuÛE\x1dÐë\x08ýµA\x11\x93\x06\x91ôo\x99V\x82\x05{s|ÉÄ\x1eÆP(z5¼úÏ1ºaMÊL\x9a\x0biù¢\x17][·l¡Ã{Ö½\x9c\x88\x87;Th\x96eI{TUjé\xadÙ\x81,\x05\x05mÖ\x8c/¯Ñ\x074U\x8c^G#+P\x1bÊW£\x0czÂ\x9e\x97¿¡:(\x9d3\x87ùñ-\x07³ËYÉ\x16Fx\x9bå\x9a.;p\x82P¨Q\x1e£~\x9fò!Í7Rÿj$ jI\x02\x13ªykÉ\x0bATÕÐF\\Q\rÂ\x80W¢DvßK\n'
-[2024-11-28 13:48:22,919] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7efe80be5f60 object, fd=16, family=10, type=1, proto=0>: (from ('::ffff:172.20.0.1', 46896, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06Ç\x01\x00\x06Ã\x03\x03¤C"¸\x01\x8e\x08\x16&\x17^ÀÁøìæ\x1e¹Àëä¯Lð¯}ãÎNçÒÂ ª\x12RîI\x93î\x88ìã\x01°\r)i+\x1c6¬\x9bÚ\x9dï%þ¹pbÝtí³\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Z**\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x00\x00#\x00!\x00\x00\x1eeggie-pc.griffin-kelvin.ts.net\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\n'
-[2024-11-28 13:52:03,138]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 13:52:03,177]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 13:52:03,495]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[2024-12-19 06:12:09,962]  INFO {apscheduler.scheduler:181} Scheduler started
+[2024-12-19 06:12:09,963]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
+[2024-12-19 06:12:09,963]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2024-12-19 06:12:09,964]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
+[2024-12-19 06:12:09,965]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
+[2024-12-19 06:12:09,965]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
+[2024-12-19 06:12:09,966]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2024-12-19 06:12:09,967]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2024-12-19 06:12:09,967]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-12-19 06:12:09 UTC], next run at: 2024-12-19 06:12:09 UTC)" (scheduled at 2024-12-19 06:12:09.966855+00:00)
+[2024-12-19 06:12:09,967]  INFO {apscheduler.scheduler:641} Removed job 3ccb640f4f2a4012ba3fde0b4f15ab1d
+[2024-12-19 06:12:09,977]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-12-19 06:12:09 UTC], next run at: 2024-12-19 06:12:09 UTC)" executed successfully
+[2024-12-19 06:12:11,048]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2024-12-19 06:12:58,261]  INFO {cps.server:319} webserver stop (restart=False)
+[2024-12-19 06:12:58,262]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
+[2024-12-19 06:12:58,263]  INFO {cps.server:298} Performing shutdown of Calibre-Web
+[2024-12-19 06:13:13,291]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2024-12-19 06:13:13,319]  INFO {cps:178} Starting Calibre Web...
+[2024-12-19 06:13:13,556]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 
-[2024-11-28 13:52:03,685]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 13:52:03,686]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 13:52:03,686]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 13:52:03,687]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 13:52:03,687]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 13:52:03,688]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 13:52:03,688]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 13:52:03,689]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 13:52:03,689]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 13:52:03 UTC], next run at: 2024-11-28 13:52:03 UTC)" (scheduled at 2024-11-28 13:52:03.689240+00:00)
-[2024-11-28 13:52:03,690]  INFO {apscheduler.scheduler:641} Removed job b4f3633b9bc6408a9b6c3b9a7b833408
-[2024-11-28 13:52:03,699]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 13:52:03 UTC], next run at: 2024-11-28 13:52:03 UTC)" executed successfully
-[2024-11-28 13:52:04,741]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 14:11:09,401]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 14:11:09,402]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 14:11:09,403]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 14:12:14,327]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 14:12:14,367]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 14:12:14,676]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[2024-12-19 06:13:13,711]  INFO {apscheduler.scheduler:181} Scheduler started
+[2024-12-19 06:13:13,712]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
+[2024-12-19 06:13:13,713]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2024-12-19 06:13:13,713]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
+[2024-12-19 06:13:13,714]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
+[2024-12-19 06:13:13,714]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
+[2024-12-19 06:13:13,715]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2024-12-19 06:13:13,716]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2024-12-19 06:13:13,716]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-12-19 06:13:13 UTC], next run at: 2024-12-19 06:13:13 UTC)" (scheduled at 2024-12-19 06:13:13.716079+00:00)
+[2024-12-19 06:13:13,717]  INFO {apscheduler.scheduler:641} Removed job 964f2f5c54bb4e958031c79981023919
+[2024-12-19 06:13:13,726]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-12-19 06:13:13 UTC], next run at: 2024-12-19 06:13:13 UTC)" executed successfully
+[2024-12-19 06:13:14,634]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2024-12-20 01:00:00,007]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" (scheduled at 2024-12-20 01:00:00+00:00)
+[2024-12-20 01:00:00,008]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" (scheduled at 2024-12-20 01:00:00+00:00)
+[2024-12-20 01:00:00,008]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" (scheduled at 2024-12-20 01:00:00+00:00)
+[2024-12-20 01:00:00,010]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" (scheduled at 2024-12-20 01:00:00+00:00)
+[2024-12-20 01:00:00,012]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" (scheduled at 2024-12-20 01:00:00+00:00)
+[2024-12-20 01:00:00,027]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" executed successfully
+[2024-12-20 01:00:00,035]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" executed successfully
+[2024-12-20 01:00:00,053]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" executed successfully
+[2024-12-20 01:00:00,060]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" executed successfully
+[2024-12-20 01:00:00,063]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-21 01:00:00 UTC)" executed successfully
+[2024-12-20 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-21 02:00:00 UTC)" (scheduled at 2024-12-20 02:00:00+00:00)
+[2024-12-20 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-21 02:00:00 UTC)" executed successfully
+[2024-12-21 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" (scheduled at 2024-12-21 01:00:00+00:00)
+[2024-12-21 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" (scheduled at 2024-12-21 01:00:00+00:00)
+[2024-12-21 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" (scheduled at 2024-12-21 01:00:00+00:00)
+[2024-12-21 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" (scheduled at 2024-12-21 01:00:00+00:00)
+[2024-12-21 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" (scheduled at 2024-12-21 01:00:00+00:00)
+[2024-12-21 01:00:00,023]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" executed successfully
+[2024-12-21 01:00:00,035]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" executed successfully
+[2024-12-21 01:00:00,042]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" executed successfully
+[2024-12-21 01:00:00,043]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" executed successfully
+[2024-12-21 01:00:00,044]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-22 01:00:00 UTC)" executed successfully
+[2024-12-21 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-22 02:00:00 UTC)" (scheduled at 2024-12-21 02:00:00+00:00)
+[2024-12-21 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-22 02:00:00 UTC)" executed successfully
+[2024-12-21 05:05:39,099]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2024-12-21 05:05:39,142]  INFO {cps:178} Starting Calibre Web...
+[2024-12-21 05:05:39,489]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 
-[2024-11-28 14:12:14,855]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 14:12:14,856]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 14:12:14,857]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 14:12:14,858]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 14:12:14,858]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 14:12:14,859]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 14:12:14,860]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 14:12:14,860]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 14:12:14,861]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 14:12:14 UTC], next run at: 2024-11-28 14:12:14 UTC)" (scheduled at 2024-11-28 14:12:14.860804+00:00)
-[2024-11-28 14:12:14,861]  INFO {apscheduler.scheduler:641} Removed job 763dcf53643e475186b2f06e08f09dee
-[2024-11-28 14:12:14,870]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 14:12:14 UTC], next run at: 2024-11-28 14:12:14 UTC)" executed successfully
-[2024-11-28 14:12:15,910]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 14:26:39,383]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 14:26:39,384]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 14:26:40,390]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 14:29:35,485]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 14:29:35,530]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 14:29:35,851]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[2024-12-21 05:05:39,689]  INFO {apscheduler.scheduler:181} Scheduler started
+[2024-12-21 05:05:39,690]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
+[2024-12-21 05:05:39,691]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2024-12-21 05:05:39,692]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
+[2024-12-21 05:05:39,692]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
+[2024-12-21 05:05:39,693]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
+[2024-12-21 05:05:39,694]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2024-12-21 05:05:39,694]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2024-12-21 05:05:39,695]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-12-21 05:05:39 UTC], next run at: 2024-12-21 05:05:39 UTC)" (scheduled at 2024-12-21 05:05:39.694566+00:00)
+[2024-12-21 05:05:39,695]  INFO {apscheduler.scheduler:641} Removed job 574fc082addb4ad391467675d22fc379
+[2024-12-21 05:05:39,704]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-12-21 05:05:39 UTC], next run at: 2024-12-21 05:05:39 UTC)" executed successfully
+[2024-12-21 05:05:40,789]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2024-12-22 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" (scheduled at 2024-12-22 01:00:00+00:00)
+[2024-12-22 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" (scheduled at 2024-12-22 01:00:00+00:00)
+[2024-12-22 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" (scheduled at 2024-12-22 01:00:00+00:00)
+[2024-12-22 01:00:00,008]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" (scheduled at 2024-12-22 01:00:00+00:00)
+[2024-12-22 01:00:00,008]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" (scheduled at 2024-12-22 01:00:00+00:00)
+[2024-12-22 01:00:00,024]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" executed successfully
+[2024-12-22 01:00:00,024]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" executed successfully
+[2024-12-22 01:00:00,044]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" executed successfully
+[2024-12-22 01:00:00,051]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" executed successfully
+[2024-12-22 01:00:00,052]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-23 01:00:00 UTC)" executed successfully
+[2024-12-22 02:00:00,001]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-23 02:00:00 UTC)" (scheduled at 2024-12-22 02:00:00+00:00)
+[2024-12-22 02:00:00,002]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-23 02:00:00 UTC)" executed successfully
+[2024-12-23 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" (scheduled at 2024-12-23 01:00:00+00:00)
+[2024-12-23 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" (scheduled at 2024-12-23 01:00:00+00:00)
+[2024-12-23 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" (scheduled at 2024-12-23 01:00:00+00:00)
+[2024-12-23 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" (scheduled at 2024-12-23 01:00:00+00:00)
+[2024-12-23 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" (scheduled at 2024-12-23 01:00:00+00:00)
+[2024-12-23 01:00:00,008]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" executed successfully
+[2024-12-23 01:00:00,015]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" executed successfully
+[2024-12-23 01:00:00,018]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" executed successfully
+[2024-12-23 01:00:00,019]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" executed successfully
+[2024-12-23 01:00:00,022]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-24 01:00:00 UTC)" executed successfully
+[2024-12-23 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-24 02:00:00 UTC)" (scheduled at 2024-12-23 02:00:00+00:00)
+[2024-12-23 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-24 02:00:00 UTC)" executed successfully
+[2024-12-24 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" (scheduled at 2024-12-24 01:00:00+00:00)
+[2024-12-24 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" (scheduled at 2024-12-24 01:00:00+00:00)
+[2024-12-24 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" (scheduled at 2024-12-24 01:00:00+00:00)
+[2024-12-24 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" (scheduled at 2024-12-24 01:00:00+00:00)
+[2024-12-24 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" (scheduled at 2024-12-24 01:00:00+00:00)
+[2024-12-24 01:00:00,008]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" executed successfully
+[2024-12-24 01:00:00,009]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" executed successfully
+[2024-12-24 01:00:00,012]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" executed successfully
+[2024-12-24 01:00:00,012]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" executed successfully
+[2024-12-24 01:00:00,013]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-25 01:00:00 UTC)" executed successfully
+[2024-12-24 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-25 02:00:00 UTC)" (scheduled at 2024-12-24 02:00:00+00:00)
+[2024-12-24 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-25 02:00:00 UTC)" executed successfully
+[2024-12-25 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" (scheduled at 2024-12-25 01:00:00+00:00)
+[2024-12-25 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" (scheduled at 2024-12-25 01:00:00+00:00)
+[2024-12-25 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" (scheduled at 2024-12-25 01:00:00+00:00)
+[2024-12-25 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" (scheduled at 2024-12-25 01:00:00+00:00)
+[2024-12-25 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" (scheduled at 2024-12-25 01:00:00+00:00)
+[2024-12-25 01:00:00,009]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" executed successfully
+[2024-12-25 01:00:00,016]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" executed successfully
+[2024-12-25 01:00:00,017]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" executed successfully
+[2024-12-25 01:00:00,019]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" executed successfully
+[2024-12-25 01:00:00,021]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-26 01:00:00 UTC)" executed successfully
+[2024-12-25 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-26 02:00:00 UTC)" (scheduled at 2024-12-25 02:00:00+00:00)
+[2024-12-25 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-26 02:00:00 UTC)" executed successfully
+[2024-12-26 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" (scheduled at 2024-12-26 01:00:00+00:00)
+[2024-12-26 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" (scheduled at 2024-12-26 01:00:00+00:00)
+[2024-12-26 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" (scheduled at 2024-12-26 01:00:00+00:00)
+[2024-12-26 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" (scheduled at 2024-12-26 01:00:00+00:00)
+[2024-12-26 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" (scheduled at 2024-12-26 01:00:00+00:00)
+[2024-12-26 01:00:00,028]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" executed successfully
+[2024-12-26 01:00:00,030]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" executed successfully
+[2024-12-26 01:00:00,034]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" executed successfully
+[2024-12-26 01:00:00,035]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" executed successfully
+[2024-12-26 01:00:00,036]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-27 01:00:00 UTC)" executed successfully
+[2024-12-26 02:00:00,001]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-27 02:00:00 UTC)" (scheduled at 2024-12-26 02:00:00+00:00)
+[2024-12-26 02:00:00,003]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-27 02:00:00 UTC)" executed successfully
+[2024-12-27 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" (scheduled at 2024-12-27 01:00:00+00:00)
+[2024-12-27 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" (scheduled at 2024-12-27 01:00:00+00:00)
+[2024-12-27 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" (scheduled at 2024-12-27 01:00:00+00:00)
+[2024-12-27 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" (scheduled at 2024-12-27 01:00:00+00:00)
+[2024-12-27 01:00:00,005]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" (scheduled at 2024-12-27 01:00:00+00:00)
+[2024-12-27 01:00:00,012]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" executed successfully
+[2024-12-27 01:00:00,013]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" executed successfully
+[2024-12-27 01:00:00,042]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" executed successfully
+[2024-12-27 01:00:00,043]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" executed successfully
+[2024-12-27 01:00:00,045]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-28 01:00:00 UTC)" executed successfully
+[2024-12-27 02:00:00,001]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-28 02:00:00 UTC)" (scheduled at 2024-12-27 02:00:00+00:00)
+[2024-12-27 02:00:00,003]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-28 02:00:00 UTC)" executed successfully
+[2024-12-28 01:00:00,006]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" (scheduled at 2024-12-28 01:00:00+00:00)
+[2024-12-28 01:00:00,007]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" (scheduled at 2024-12-28 01:00:00+00:00)
+[2024-12-28 01:00:00,008]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" (scheduled at 2024-12-28 01:00:00+00:00)
+[2024-12-28 01:00:00,009]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" (scheduled at 2024-12-28 01:00:00+00:00)
+[2024-12-28 01:00:00,009]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" (scheduled at 2024-12-28 01:00:00+00:00)
+[2024-12-28 01:00:00,027]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" executed successfully
+[2024-12-28 01:00:00,028]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" executed successfully
+[2024-12-28 01:00:00,055]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" executed successfully
+[2024-12-28 01:00:00,065]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" executed successfully
+[2024-12-28 01:00:00,068]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-29 01:00:00 UTC)" executed successfully
+[2024-12-28 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-29 02:00:00 UTC)" (scheduled at 2024-12-28 02:00:00+00:00)
+[2024-12-28 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-29 02:00:00 UTC)" executed successfully
+[2024-12-29 04:39:58,909]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2024-12-29 04:39:58,972]  INFO {cps:178} Starting Calibre Web...
+[2024-12-29 04:39:59,391]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 
-[2024-11-28 14:29:36,031]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 14:29:36,032]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 14:29:36,033]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 14:29:36,033]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 14:29:36,034]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 14:29:36,035]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 14:29:36,035]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 14:29:36,036]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 14:29:36,037]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 14:29:36 UTC], next run at: 2024-11-28 14:29:36 UTC)" (scheduled at 2024-11-28 14:29:36.036300+00:00)
-[2024-11-28 14:29:36,037]  INFO {apscheduler.scheduler:641} Removed job 1abf6bde33764c01b839f29809ba05f2
-[2024-11-28 14:29:36,046]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 14:29:36 UTC], next run at: 2024-11-28 14:29:36 UTC)" executed successfully
-[2024-11-28 14:29:37,092]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 14:30:58,156]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 14:30:58,157]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 14:30:58,158]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 14:31:55,121]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 14:31:55,162]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 14:31:55,492]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[2024-12-29 04:39:59,607]  INFO {apscheduler.scheduler:181} Scheduler started
+[2024-12-29 04:39:59,608]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
+[2024-12-29 04:39:59,608]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2024-12-29 04:39:59,609]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
+[2024-12-29 04:39:59,610]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
+[2024-12-29 04:39:59,611]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
+[2024-12-29 04:39:59,611]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2024-12-29 04:39:59,612]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2024-12-29 04:39:59,613]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-12-29 04:39:59 UTC], next run at: 2024-12-29 04:39:59 UTC)" (scheduled at 2024-12-29 04:39:59.612787+00:00)
+[2024-12-29 04:39:59,613]  INFO {apscheduler.scheduler:641} Removed job af02c7eccdb7404992694e9eba91c1a8
+[2024-12-29 04:39:59,623]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-12-29 04:39:59 UTC], next run at: 2024-12-29 04:39:59 UTC)" executed successfully
+[2024-12-29 04:40:00,879]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2024-12-30 12:00:41,200]  WARN {apscheduler.executors.default:120} Run time of job "reconnect (trigger: cron[hour='1'], next run at: 2024-12-31 01:00:00 UTC)" was missed by 11:00:41.199758
+[2024-12-30 12:00:41,200]  WARN {apscheduler.executors.default:120} Run time of job "delete temp (trigger: cron[hour='1'], next run at: 2024-12-31 01:00:00 UTC)" was missed by 11:00:41.200850
+[2024-12-30 12:00:41,201]  WARN {apscheduler.executors.default:120} Run time of job "backup metadata (trigger: cron[hour='1'], next run at: 2024-12-31 01:00:00 UTC)" was missed by 11:00:41.201509
+[2024-12-30 12:00:41,202]  WARN {apscheduler.executors.default:120} Run time of job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2024-12-31 01:00:00 UTC)" was missed by 11:00:41.202861
+[2024-12-30 12:00:41,203]  WARN {apscheduler.executors.default:120} Run time of job "generate book covers (trigger: cron[hour='1'], next run at: 2024-12-31 01:00:00 UTC)" was missed by 11:00:41.203232
+[2024-12-30 12:00:41,203]  WARN {apscheduler.executors.default:120} Run time of job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2024-12-31 02:00:00 UTC)" was missed by 10:00:41.203912
+[2024-12-31 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" (scheduled at 2024-12-31 01:00:00+00:00)
+[2024-12-31 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" (scheduled at 2024-12-31 01:00:00+00:00)
+[2024-12-31 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" (scheduled at 2024-12-31 01:00:00+00:00)
+[2024-12-31 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" (scheduled at 2024-12-31 01:00:00+00:00)
+[2024-12-31 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" (scheduled at 2024-12-31 01:00:00+00:00)
+[2024-12-31 01:00:00,016]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" executed successfully
+[2024-12-31 01:00:00,033]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" executed successfully
+[2024-12-31 01:00:00,041]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" executed successfully
+[2024-12-31 01:00:00,044]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" executed successfully
+[2024-12-31 01:00:00,046]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2025-01-01 01:00:00 UTC)" executed successfully
+[2024-12-31 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2025-01-01 02:00:00 UTC)" (scheduled at 2024-12-31 02:00:00+00:00)
+[2024-12-31 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2025-01-01 02:00:00 UTC)" executed successfully
+[2025-01-01 01:00:00,002]  INFO {apscheduler.executors.default:123} Running job "reconnect (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" (scheduled at 2025-01-01 01:00:00+00:00)
+[2025-01-01 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete temp (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" (scheduled at 2025-01-01 01:00:00+00:00)
+[2025-01-01 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "backup metadata (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" (scheduled at 2025-01-01 01:00:00+00:00)
+[2025-01-01 01:00:00,003]  INFO {apscheduler.executors.default:123} Running job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" (scheduled at 2025-01-01 01:00:00+00:00)
+[2025-01-01 01:00:00,004]  INFO {apscheduler.executors.default:123} Running job "generate book covers (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" (scheduled at 2025-01-01 01:00:00+00:00)
+[2025-01-01 01:00:00,009]  INFO {apscheduler.executors.default:144} Job "reconnect (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" executed successfully
+[2025-01-01 01:00:00,024]  INFO {apscheduler.executors.default:144} Job "delete temp (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" executed successfully
+[2025-01-01 01:00:00,026]  INFO {apscheduler.executors.default:144} Job "backup metadata (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" executed successfully
+[2025-01-01 01:00:00,029]  INFO {apscheduler.executors.default:144} Job "delete superfluous book covers (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" executed successfully
+[2025-01-01 01:00:00,030]  INFO {apscheduler.executors.default:144} Job "generate book covers (trigger: cron[hour='1'], next run at: 2025-01-02 01:00:00 UTC)" executed successfully
+[2025-01-01 02:00:00,000]  INFO {apscheduler.executors.default:123} Running job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2025-01-02 02:00:00 UTC)" (scheduled at 2025-01-01 02:00:00+00:00)
+[2025-01-01 02:00:00,001]  INFO {apscheduler.executors.default:144} Job "end scheduled task (trigger: cron[hour='2', minute='0'], next run at: 2025-01-02 02:00:00 UTC)" executed successfully
+[2025-01-01 15:08:44,426]  INFO {cps.server:319} webserver stop (restart=False)
+[2025-01-01 15:08:44,438]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
+[2025-01-01 15:08:44,449]  INFO {cps.server:298} Performing shutdown of Calibre-Web
+[2025-01-11 04:40:56,512]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
+[2025-01-11 04:40:56,559]  INFO {cps:178} Starting Calibre Web...
+[2025-01-11 04:40:56,933]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 
-[2024-11-28 14:31:55,681]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 14:31:55,682]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 14:31:55,683]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 14:31:55,684]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 14:31:55,684]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 14:31:55,685]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 14:31:55,686]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 14:31:55,686]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 14:31:55,687]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 14:31:55 UTC], next run at: 2024-11-28 14:31:55 UTC)" (scheduled at 2024-11-28 14:31:55.686564+00:00)
-[2024-11-28 14:31:55,687]  INFO {apscheduler.scheduler:641} Removed job 4e1ac8fc849a4a84ad50a1400efc1cf7
-[2024-11-28 14:31:55,698]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 14:31:55 UTC], next run at: 2024-11-28 14:31:55 UTC)" executed successfully
-[2024-11-28 14:31:56,747]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 14:33:24,345] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7f946b23dcc0 object, fd=14, family=10, type=1, proto=0>: (from ('::ffff:127.0.0.1', 40032, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ê\x01\x00\x06æ\x03\x03 \xa0$3L\x07&Us9æ\x00Æ¯òHÛ\x82\tôäw<¹ÒøÙ@\x81«£? ïV¢æ\x0c\x89ædw0ÓÜ{k\x1f\x80r®\x05ó\x8cñ-ñ\x10¶+á\x08ß\x11á\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06}\x9a\x9a\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À¸èÍÐâlQ(A\x8e\x10I¼Ô9AÑatUméÆ?wÂ{=\x97\xadíDHÚà\x19\x13æ()ÊL\x93wm\xa0\x9a\x15ouDb\x81ÏÂ\x98©aA{\x92\x80\x08Å)\x86=h\x1d\x9d\x80xl \x82W@\x84Ú9\xa0\\ü\xa0(ª-l\x85G\xa0H\x18²\x1awú\x8aJ\x0e£9>\x06#èâ\x05¢Û!Mx\x87ôÛ\t3ë\x93Ö:>\x86¶\x9fè,Bñ\x8b\x8dÐF;íÅ£Àj.ýWÆ\xad\x01\x7f\x94<\x1f,ñÉ_|²©Æ\x10\x9ac1O\x04\x08×¢\x84Ï+Ë¦a\n'
-[2024-11-28 14:33:24,348] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7f946b23dd80 object, fd=14, family=10, type=1, proto=0>: (from ('::ffff:127.0.0.1', 40042, 0, 0)) Invalid HTTP method: "\x16\x03\x01\x07*\x01\x00\x07&\x03\x03¦GXí\x99©\x81ª³ú\x132£ù\x1bÑÃÕ\x9a8\x1f\x0e¨U2Ì\x92TB&,N \x1bñoçox0öÞØ1ÊuÚHY:¢\x90°5.ºì\x9bÏ<\x0c&\x90\x08Ï\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06½::\x00\x00\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀwC'D¤Ja`0*×2|Á,ÈÛkOð\x90óèTü\x91\x90ð\x97 a%?@\x0c%µêWÝàÎâFX\x85\x941*¬aoâÂudI«E\x19Ä£È^É\x19\x13x\x07Ú\n"
-[2024-11-28 14:55:43,205]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 14:55:43,206]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 14:55:43,208]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 14:57:01,637]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 14:57:01,680]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 14:57:02,006]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 14:57:02,191]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 14:57:02,192]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 14:57:02,193]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 14:57:02,193]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 14:57:02,194]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 14:57:02,194]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 14:57:02,195]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 14:57:02,196]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 14:57:02,196]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 14:57:02 UTC], next run at: 2024-11-28 14:57:02 UTC)" (scheduled at 2024-11-28 14:57:02.195864+00:00)
-[2024-11-28 14:57:02,196]  INFO {apscheduler.scheduler:641} Removed job d8d86a45dc354dc39788923623ffa489
-[2024-11-28 14:57:02,205]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 14:57:02 UTC], next run at: 2024-11-28 14:57:02 UTC)" executed successfully
-[2024-11-28 14:57:03,304]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 14:57:40,040]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 14:57:40,041]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 14:57:40,042]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 14:57:51,124]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 14:57:51,166]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 14:57:51,523]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 14:57:51,716]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 14:57:51,717]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 14:57:51,717]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 14:57:51,718]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 14:57:51,719]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 14:57:51,719]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 14:57:51,720]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 14:57:51,720]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 14:57:51,721]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 14:57:51 UTC], next run at: 2024-11-28 14:57:51 UTC)" (scheduled at 2024-11-28 14:57:51.720528+00:00)
-[2024-11-28 14:57:51,721]  INFO {apscheduler.scheduler:641} Removed job 9f40fcc62d094b7c8120a206edad9700
-[2024-11-28 14:57:51,730]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 14:57:51 UTC], next run at: 2024-11-28 14:57:51 UTC)" executed successfully
-[2024-11-28 14:57:52,763]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 15:01:45,403] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7fa037384b80 object, fd=12, family=10, type=1, proto=0>: (from ('::ffff:127.0.0.1', 60296, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x07*\x01\x00\x07&\x03\x03e}§\tSû\x1bCãWsí3Õ½uç\x88\x99\xad#[ÍN\x8c\x1c\x96\x97f\x08UN \x0b>\x94cæ.[XMr¢[\x11d%\x8f´gÐìc\x06.\x8bé\x85þvP}zÍ\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06½zz\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0b\x00\x02\x01\x00\x00\n'
-[2024-11-28 15:01:45,407] ERROR {cps.server:1349} <gevent._socket3.socket at 0x7fa037385e40 object, fd=12, family=10, type=1, proto=0>: (from ('::ffff:127.0.0.1', 60318, 0, 0)) Invalid HTTP method: '\x16\x03\x01\x06ê\x01\x00\x06æ\x03\x03âÏ\x9f/î\x01²uA£\x02k3»V®\x10¸\x8cß3©Z7\x06\x95È\x08e\x11Ù¡ \x10L(ô¦Ãø\x02Ï\x99v¸ãë|\x06ºb\x01Í\x8ek\x1chÎ¯Ó\x85\x19\x9cG\x8b\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06}jj\x00\x00\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00þ\r\x00Ú\x00\x00\x01\x00\x01×\x00 \x03\x02?\x04²."8ð_J\x06úcm\x89tç2\x13û:ÞÍ{o\x99Ú\x1d4\x0fi\x00°\r;ö\x08\x13H;ÕpT\x9då¯\x97M \x10©ª¤Ú1Ë_2\x89Hçò´hó8cyMP´îè\x13\x98B\x01ä®ûËF¬\'~v¹PÊ\x93ú\x82\x8e¥3~N\x90ÚÕ\x05¨«Z«ø\\ÕÂe¢cÙ\x0fL1XKR\x89/\x80\x0f$Mïíñ\xa0\xad¤9\x87¤Ø\xa0\x06\x06È\x94&\x03Í\x0b\r\x9d¦W\x84\x1bª\x9eÝ\x07TêêF\x0fËi(zõ\x85QÉ\tëIÀ\x8dÙkôi¼\x91¬$\x1dü\t\\\x00Q!\xa0@sI/¡§\x92ù«Ô:n©RrÛJM÷\x14Ö\x00\r\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x00\n'
-[2024-11-28 15:11:01,477]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 15:11:01,519]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 15:11:01,862]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 15:11:02,068]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 15:11:02,069]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 15:11:02,069]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 15:11:02,070]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 15:11:02,070]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 15:11:02,071]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 15:11:02,072]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 15:11:02,073]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 15:11:02,073]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 15:11:02 UTC], next run at: 2024-11-28 15:11:02 UTC)" (scheduled at 2024-11-28 15:11:02.072850+00:00)
-[2024-11-28 15:11:02,073]  INFO {apscheduler.scheduler:641} Removed job 83b3e908395a481496aaa857fc505225
-[2024-11-28 15:11:02,083]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 15:11:02 UTC], next run at: 2024-11-28 15:11:02 UTC)" executed successfully
-[2024-11-28 15:11:03,194]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 15:20:45,145]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 15:20:45,146]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 15:20:46,150]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 15:22:35,400]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 15:22:35,440]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 15:22:35,743]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 15:22:35,919]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 15:22:35,920]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 15:22:35,920]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 15:22:35,921]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 15:22:35,922]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 15:22:35,922]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 15:22:35,923]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 15:22:35,923]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 15:22:35,924]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 15:22:35 UTC], next run at: 2024-11-28 15:22:35 UTC)" (scheduled at 2024-11-28 15:22:35.923825+00:00)
-[2024-11-28 15:22:35,924]  INFO {apscheduler.scheduler:641} Removed job e343add182164f13bbdce7bee87f4290
-[2024-11-28 15:22:35,933]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 15:22:35 UTC], next run at: 2024-11-28 15:22:35 UTC)" executed successfully
-[2024-11-28 15:22:36,930]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 15:29:44,505]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 15:29:44,506]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 15:29:44,506]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 15:31:36,213]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 15:31:36,252]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 15:31:36,542]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 15:31:36,709]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 15:31:36,710]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 15:31:36,711]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 15:31:36,712]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 15:31:36,712]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 15:31:36,713]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 15:31:36,714]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 15:31:36,714]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 15:31:36,715]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 15:31:36 UTC], next run at: 2024-11-28 15:31:36 UTC)" (scheduled at 2024-11-28 15:31:36.714444+00:00)
-[2024-11-28 15:31:36,715]  INFO {apscheduler.scheduler:641} Removed job 5bed96d71292412ca39af5ed4a192c4a
-[2024-11-28 15:31:36,724]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 15:31:36 UTC], next run at: 2024-11-28 15:31:36 UTC)" executed successfully
-[2024-11-28 15:31:37,711]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 15:36:43,240]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 15:36:43,241]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 15:36:43,241]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 15:37:34,748]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 15:37:34,787]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 15:37:35,083]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 15:37:35,250]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 15:37:35,252]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 15:37:35,252]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 15:37:35,253]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 15:37:35,253]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 15:37:35,254]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 15:37:35,255]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 15:37:35,256]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 15:37:35,256]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 15:37:35 UTC], next run at: 2024-11-28 15:37:35 UTC)" (scheduled at 2024-11-28 15:37:35.255923+00:00)
-[2024-11-28 15:37:35,257]  INFO {apscheduler.scheduler:641} Removed job f58d86f104bb49679babe53b359387d1
-[2024-11-28 15:37:35,264]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 15:37:35 UTC], next run at: 2024-11-28 15:37:35 UTC)" executed successfully
-[2024-11-28 15:37:36,274]  INFO {cps.server:218} Starting Gevent server on [::]:8083
-[2024-11-28 16:05:56,571]  INFO {cps.web:1237} Serving book: History of the Roman Empire dur - Interesting History
-[2024-11-28 16:05:56,755]  INFO {cps.web:1237} Serving book: History of the Roman Empire dur - Interesting History
-[2024-11-28 16:08:19,621]  INFO {cps.web:1237} Serving book: Hard Times - Charles Dickens
-[2024-11-28 16:08:19,807]  INFO {cps.web:1237} Serving book: Hard Times - Charles Dickens
-[2024-11-28 16:11:38,885]  INFO {cps.server:319} webserver stop (restart=False)
-[2024-11-28 16:11:38,886]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
-[2024-11-28 16:11:38,886]  INFO {cps.server:298} Performing shutdown of Calibre-Web
-[2024-11-28 16:11:54,049]  WARN {cps.config_sql:364} Log path  not valid, falling back to default
-[2024-11-28 16:11:54,090]  INFO {cps:178} Starting Calibre Web...
-[2024-11-28 16:11:54,403]  WARN {py.warnings:109} /lsiopy/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
-  warnings.warn(
-
-[2024-11-28 16:11:54,595]  INFO {apscheduler.scheduler:181} Scheduler started
-[2024-11-28 16:11:54,597]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
-[2024-11-28 16:11:54,597]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
-[2024-11-28 16:11:54,598]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
-[2024-11-28 16:11:54,599]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
-[2024-11-28 16:11:54,599]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
-[2024-11-28 16:11:54,600]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
-[2024-11-28 16:11:54,601]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
-[2024-11-28 16:11:54,602]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2024-11-28 16:11:54 UTC], next run at: 2024-11-28 16:11:54 UTC)" (scheduled at 2024-11-28 16:11:54.601188+00:00)
-[2024-11-28 16:11:54,602]  INFO {apscheduler.scheduler:641} Removed job b3f4152a423140b780c357f785f56a7b
-[2024-11-28 16:11:54,611]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2024-11-28 16:11:54 UTC], next run at: 2024-11-28 16:11:54 UTC)" executed successfully
-[2024-11-28 16:11:55,681]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2025-01-11 04:40:57,168]  INFO {apscheduler.scheduler:181} Scheduler started
+[2025-01-11 04:40:57,169]  INFO {apscheduler.scheduler:895} Added job "reconnect" to job store "default"
+[2025-01-11 04:40:57,169]  INFO {apscheduler.scheduler:895} Added job "delete temp" to job store "default"
+[2025-01-11 04:40:57,170]  INFO {apscheduler.scheduler:895} Added job "backup metadata" to job store "default"
+[2025-01-11 04:40:57,171]  INFO {apscheduler.scheduler:895} Added job "delete superfluous book covers" to job store "default"
+[2025-01-11 04:40:57,172]  INFO {apscheduler.scheduler:895} Added job "generate book covers" to job store "default"
+[2025-01-11 04:40:57,173]  INFO {apscheduler.scheduler:895} Added job "end scheduled task" to job store "default"
+[2025-01-11 04:40:57,173]  INFO {apscheduler.scheduler:895} Added job "immediately delete temp" to job store "default"
+[2025-01-11 04:40:57,174]  INFO {apscheduler.executors.default:123} Running job "immediately delete temp (trigger: date[2025-01-11 04:40:57 UTC], next run at: 2025-01-11 04:40:57 UTC)" (scheduled at 2025-01-11 04:40:57.173619+00:00)
+[2025-01-11 04:40:57,174]  INFO {apscheduler.scheduler:641} Removed job 612694ddecf14741abcc6459d06a27c2
+[2025-01-11 04:40:57,185]  INFO {apscheduler.executors.default:144} Job "immediately delete temp (trigger: date[2025-01-11 04:40:57 UTC], next run at: 2025-01-11 04:40:57 UTC)" executed successfully
+[2025-01-11 04:40:58,408]  INFO {cps.server:218} Starting Gevent server on [::]:8083
+[2025-01-11 05:04:35,505]  INFO {cps.server:319} webserver stop (restart=False)
+[2025-01-11 05:04:35,508]  INFO {apscheduler.scheduler:212} Scheduler has been shut down
+[2025-01-11 05:04:35,510]  INFO {cps.server:298} Performing shutdown of Calibre-Web
